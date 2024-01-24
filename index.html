@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="This is a Hockey Related Landing Page.">
+        <meta name="keywords" content="HTML, CSS, Tailwind CSS, and DaisyUI">
+        <meta name="author" content="Nobonita Saha Niha">
+
+
+        <!-- ========== Title & Favicon ========== -->
+        <title>Hockey’s Landing Page</title>
+        <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
+
+
+        <!-- =========== Tailwind CSS & DaisyUI Link =========== -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="js/tailwind.config.js"></script>
+
+
+        <!-- =========== Icon =============== -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body class="font-manrope">
+        <!-- ============= Navbar ============= -->
+        <header>
+          <div class="container lg:px-24 lg:pt-6 lg:pb-4 px-4 py-6 mx-auto">
+
+              <div class="navbar">
+                  <div class="navbar-start">
+                      <div class="dropdown">
+                          <div tabindex="0" role="button" class="lg:hidden">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" class="text-[#131318]" />
+                              </svg>
+                          </div>
+
+                          <ul tabindex="0" class="text-center menu-sm dropdown-content mt-5 z-[1] p-4 shadow bg-base-100 rounded-box w-80 primary-color">
+                              <li><a class="hover:text-[#FF4240] my-2 font-bold">Home</a></li>
+                              <li><a class="hover:text-[#FF4240] my-2 font-bold">About</a></li>
+                              <li><a class="hover:text-[#FF4240] my-2 font-bold">Pages</a></li>
+                              <li><a class="hover:text-[#FF4240] my-2 font-bold">Blog</a></li>
+                              <li><a class="hover:text-[#FF4240] my-2 font-bold">Contact</a></li>
+                          </ul>
+                      </div>
+
+                       <a class="primary-color lg:text-4xl text-3xl lg:mx-0 mx-2 font-extrabold">Hockey<span class="secondary-color">’</span>s</a>
+                  </div>
+
+                  <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1 primary-color text-base font-normal tracking-wide">
+                          <li><a class="secondary-color font-bold hover:bg-black hover:text-white mx-1">Home</a></li>
+                          <li><a class="hover:bg-[#FF4240] hover:text-white mx-1 font-bold">About</a></li>
+                          <li><a class="hover:bg-[#FF4240] hover:text-white mx-1 font-bold">Pages</a></li>
+                          <li><a class="hover:bg-[#FF4240] hover:text-white mx-1 font-bold">Blog</a></li>
+                          <li><a class="hover:bg-[#FF4240] hover:text-white mx-1 font-bold">Contact</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="navbar-end">
+                      <i class="fa-solid fa-magnifying-glass text-xl text-[#89898B] mx-6 lg:block hidden hover:text-[#FF4240]"></i>
+                      <a class="btn text-white bg-[#FF4240] rounded-2xl lg:px-6 lg:py-3 px-4 py-1 text-base leading-3 font-bold hover:bg-black hover:text-white">Get Ticket</a>
+                  </div>
+              </div>
+          </div>
+      </header>
+  
+      <main>
+          <!-- ============ Slider Section Start =========== -->
+          <section id="hero-section" class="relative">
+            <div class="container lg:px-24 lg:py-6 px-4 py-2 mx-auto">
+                <div class="carousel w-full  rounded-2xl">
+
+                    <!-- ======== Slide-01 ======== -->
+                    <div id="slide1" class="carousel-item relative  w-full bg-[url('./images/banner-01.png')] lg:h-[550px] h-[230px] bg-cover bg-center bg-no-repeat">
+
+                      <div class="absolute transform -translate-y-1/2 lg:left-10 lg:right-10 lg:top-[470px] top-48 left-1/3 space-x-4">
+                          <a href="#slide4" class="btn btn-circle bg-black text-white hover:bg-[#FF4240] border-none">❮</a> 
+                          <a href="#slide2" class="btn btn-circle bg-black text-white hover:bg-[#FF4240] border-none">❯</a>
+                      </div>
+                    </div> 
+
+                    <!-- ======== Slide-02 ======== -->
+                    <div id="slide2" class="carousel-item relative  w-full bg-[url('./images/banner-02.png')] lg:h-[550px] h-[230px] bg-cover bg-center bg-no-repeat">
+
+                      <div class="absolute transform -translate-y-1/2 lg:left-10 lg:right-10 lg:top-[470px] top-48 left-1/3 space-x-4">
+                          <a href="#slide1" class="btn btn-circle bg-black text-white hover:bg-[#FF4240] border-none">❮</a> 
+                          <a href="#slide3" class="btn btn-circle bg-black text-white hover:bg-[#FF4240] border-none">❯</a>
+                      </div>
+                    </div> 
+
+                    <!-- ======== Slide-03 ======== -->
+                    <div id="slide3" class="carousel-item relative w-full bg-[url('./images/banner-03.png')] lg:h-[550px] h-[230px] bg-cover bg-center bg-no-repeat">
+
+                      <div class="absolute transform -translate-y-1/2 lg:left-10 lg:right-10 lg:top-[470px] top-48 left-1/3 space-x-4">
+                          <a href="#slide2" class="btn btn-circle bg-black text-white hover:bg-[#FF4240] border-none">❮</a> 
+                          <a href="#slide4" class="btn btn-circle bg-black text-white hover:bg-[#FF4240] border-none">❯</a>
+                      </div>
+                    </div> 
+
+                    <!-- ======== Slide-04 ======== -->
+                    <div id="slide4" class="carousel-item relative  w-full bg-[url('./images/banner-04.png')] lg:h-[550px] h-[230px] bg-cover bg-center bg-no-repeat">
+                    
+                      <div class="absolute transform -translate-y-1/2 lg:left-10 lg:right-10 lg:top-[470px] top-48 left-1/3 space-x-4">
+                          <a href="#slide3" class="btn btn-circle bg-black text-white hover:bg-[#FF4240] border-none">❮</a> 
+                          <a href="#slide1" class="btn btn-circle bg-black text-white hover:bg-[#FF4240] border-none">❯</a>
+                      </div>
+                    </div> 
+                </div>
+
+                <!-- ========== Banner Badge ========= -->
+                <div class="bg-black lg:top-[60%] top-full my-5 lg:left-[48%] py-8 px-8 lg:w-[520px] lg-right-0  left-4 right-4 absolute rounded-2xl text-white tracking-wide">
+                  <h1 class="text-2xl font-extrabold">Meet all the heroes from the field</h1>
+                  <p class="text-[15px] leading-6 mt-2 text-[#ffffff99] font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+            </div>
+          </section>
+          <!-- ============= Slider Section End ============= -->
+
+          
+          <!-- ============= Progress Bar Section Start ============= -->
+          <section id="progress-section">
+              <div class="container lg:px-24 lg:pt-20 lg:pb-8 px-4 py-14 mx-auto">
+                  <!-- === Section Title == -->
+                  <div class="text-center py-10  lg:mt-0 mt-72 section-border">
+                    <h2 class="primary-color lg:text-[40px] text-3xl font-extrabold">Professional Hockeys Club</h2>
+                    <p class="lg:px-60 pt-2 tertiary-color text-base leading-8 font-medium">These clubs consist of skilled and elite hockey players who showcase their talent and compete for championships. </p>
+                  </div>
+
+                  
+                  <div class="grid lg:grid-cols-4 grid-cols-1 gap-8 lg:mt-16 mt-14 lg:mb-5">
+                  
+                    <!-- == Radial Progress Bar-01 == -->
+                    <div class="flex items-center justify-center">
+                      <div class="w-64 h-64">
+                        <svg class="w-full h-36" viewBox="0 0 100 100">
+                          <!-- Background circle -->
+                          <circle class="text-gray-200 stroke-current" stroke-width="8" cx="50" cy="50" r="40" fill="transparent"></circle>
+
+                          <!-- Progress circle -->
+                          <circle class="text-[#FF4240]  progress-ring__circle stroke-current" stroke-width="8" stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent" stroke-dashoffset="calc(500 - (500 * 37) / 100)"></circle>
+
+                          <!-- Center text -->
+                          <text x="50" y="50" class="font-extrabold text-lg primary-color" text-anchor="middle" alignment-baseline="middle">87%</text>
+                        </svg>
+
+                        <div class="text-center">
+                          <h3 class="primary-color font-extrabold text-xl my-3">Prayer Facility</h3>
+                          <p class="text-[15px] font-medium leading-7 tertiary-color">Encourages a balance between collective spiritual moments and personal contemplation.</p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- == Radial Progress Bar-02 == -->
+                    <div class="flex items-center justify-center">
+                      <div class="w-64 h-64">
+                        <svg class="w-full h-36" viewBox="0 0 100 100">
+                          <!-- Background circle -->
+                          <circle class="text-gray-200 stroke-current" stroke-width="8" cx="50" cy="50" r="40" fill="transparent"></circle>
+
+                          <!-- Progress circle -->
+                          <circle class="text-[#49D293] progress-ring__circle stroke-current" stroke-width="8" stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent" stroke-dashoffset="calc(500 - (500 * 41) / 100)"></circle>
+
+                          <!-- Center text -->
+                          <text x="50" y="50" class="font-extrabold text-lg primary-color" text-anchor="middle" alignment-baseline="middle">91%</text>
+                        </svg>
+
+                        <div class="text-center">
+                          <h3 class="primary-color font-extrabold text-xl my-3">Experienced Coach</h3>
+                          <p class="text-[15px] font-medium leading-7 tertiary-color">This coach possesses a wealth of experience, knowledge, and expertise in the sport of hockey.</p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- == Radial Progress Bar-03 == -->
+                    <div class="flex items-center justify-center">
+                      <div class="w-64 h-64">
+                        <svg class="w-full h-36" viewBox="0 0 100 100">
+                          <!-- Background circle -->
+                          <circle class="text-gray-200 stroke-current" stroke-width="8" cx="50" cy="50" r="40" fill="transparent"></circle>
+
+                          <!-- Progress circle -->
+                          <circle class="text-[#FFB546]  progress-ring__circle stroke-current" stroke-width="8" stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent" stroke-dashoffset="calc(500 - (500 * 42) / 100)"></circle>
+
+                          <!-- Center text -->
+                          <text x="50" y="50" class="font-extrabold text-lg primary-color" text-anchor="middle" alignment-baseline="middle">92%</text>
+                        </svg>
+
+                        <div class="text-center">
+                          <h3 class="primary-color font-extrabold text-xl my-3">Senior Player</h3>
+                          <p class="text-[15px] font-medium leading-7 tertiary-color">These players possess a high level of technical skill and mastery of the fundamentals of hockey. </p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- == Radial Progress Bar-04 == -->
+                    <div class="flex items-center justify-center">
+                      <div class="w-64 h-64">
+                        <svg class="w-full h-36" viewBox="0 0 100 100">
+                          <!-- Background circle -->
+                          <circle class="text-gray-200 stroke-current" stroke-width="8" cx="50" cy="50" r="40" fill="transparent"></circle>
+
+                          <!-- Progress circle -->
+                          <circle class="text-[#4C8DF1]  progress-ring__circle stroke-current" stroke-width="8" stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent" stroke-dashoffset="calc(500 - (500 * 46) / 100)"></circle>
+
+                          <!-- Center text -->
+                          <text x="50" y="50" class="font-extrabold text-lg primary-color" text-anchor="middle" alignment-baseline="middle">96%</text>
+                        </svg>
+
+                        <div class="text-center">
+                          <h3 class="primary-color font-extrabold text-xl my-3">Training Ground</h3>
+                          <p class="text-[15px] font-medium leading-7 tertiary-color">Training Ground serves as the epicenter of preparation, skill development, and teamwork.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+              </div>
+          </section>
+          <!-- ============= Progress Bar Section End-->
+
+
+          <!-- ============= Program Section Start ============= -->
+          <section id="program-section">
+            <div class="container lg:px-24 lg:py-12 px-4 py-14 mx-auto">
+              <!-- == Section Title == -->
+              <div class="text-center py-10 section-border">
+                <h2 class="primary-color lg:text-[40px] text-3xl font-extrabold">Professional Hockeys Club</h2>
+                <p class="lg:px-60 pt-2 tertiary-color text-base leading-8 font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+              </div>
+
+              <div class="lg:mt-16 mt-14 lg:mb-5">
+                <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
+
+                    <!-- == Program Card-01 == -->
+                    <div class="hero w-full bg-[url('./images/program-banner-01.png')] h-auto bg-cover bg-center bg-no-repeat rounded-2xl ">
+                      <div class="hero-overlay bg-[#13131880] bg-opacity-60 rounded-2xl "></div>
+                      <div class="hero-content text-neutral-content">
+                        <div class="max-w-md lg:pt-20 pt-5">
+                          <h1 class="mb-4 text-3xl font-extrabold text-white">Junior Program</h1>
+                          <p class="mb-4 leading-7 text-[15px] text-white font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                          <button class="px-5 py-3 bg-[#FF4240] text-white font-semibold rounded-lg mb-5">Register Now!</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- == Program Card-02 == -->
+                    <div class="hero w-full bg-[url('./images/program-banner-02.png')] h-auto bg-cover bg-center bg-no-repeat rounded-2xl ">
+                      <div class="hero-overlay bg-[#13131880] bg-opacity-60 rounded-2xl "></div>
+                      <div class="hero-content text-neutral-content">
+                        <div class="max-w-md lg:pt-20 pt-5">
+                          <h1 class="mb-4 text-3xl font-extrabold text-white">Junior Program</h1>
+                          <p class="mb-4 leading-7 text-[15px] text-white font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                          <button class="px-5 py-3 bg-[#FF4240] text-white font-semibold rounded-lg mb-5">Register Now!</button>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+
+                <!-- === Program Card-03 == -->
+                <div class="mt-6">
+                  <div class="hero w-full bg-[url('./images/program-banner-03.png')] h-auto bg-cover bg-center bg-no-repeat rounded-2xl ">
+                    <div class="hero-overlay bg-[#13131880] bg-opacity-60 rounded-2xl "></div>
+                    <div class="hero-content text-neutral-content">
+                      <div class="lg:pt-20 lg:pl-10 pt-5">
+                        <h1 class="mb-4 text-3xl font-extrabold text-white">Junior Program</h1>
+                        <p class="mb-4 leading-7 text-[15px] text-white lg:pr-[35rem] font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                          enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                        <button class="px-5 py-3 bg-[#FF4240] text-white font-semibold rounded-lg mb-5">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+          <!-- ============= Program Section End =============== -->
+
+
+          <!-- =============== Product Section Start ========== -->
+          <section id="product-section">
+            <div class="container lg:px-24 lg:py-12 px-4 py-14 mx-auto">
+              <!-- == Section Title == -->
+              <div class="text-center py-10 section-border">
+                <h2 class="primary-color lg:text-[40px] text-3xl font-extrabold">Professional Hockeys Club</h2>
+                <p class="lg:px-60 pt-2 tertiary-color text-base leading-8 font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+              </div>
+
+              <div class="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:mt-16 mt-14 lg:mb-5 ">
+
+                <!-- ======= Card-01 ===== -->
+                <div class="flex lg:flex-row flex-col justify-between items-center gap-5 border border-[rgba(19, 19, 24, 0.60)] lg:p-6 p-5 rounded-2xl">
+                  <!-- == Img Part == -->
+                  <div class="lg:w-auto w-full">
+                    <img src="images/card-01.png"  class="w-full" alt="">
+                  </div>
+
+                  <!-- == Content part == -->
+                  <div>
+                    <ul class="flex gap-6 tertiary-color font-semibold">
+                      <li><i class="fa-solid fa-star mr-2 text-yellow-400"></i>5.0</li>
+                      <li><i class="fa-regular fa-eye mr-2"></i>20</li>
+                      <li><i class="fa-regular fa-heart mr-2"></i>200</li>
+                    </ul>
+
+                    <h3 class="text-xl font-extrabold primary-color my-1">World Cup Flags Football</h3>
+                    <p class=" text-[15px] tertiary-color font-medium leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                    <div class="flex lg:flex-row flex-col justify-between lg:items-center">
+                      <p class="font-extrabold text-xl secondary-color mt-2">Price - $22.00</p>
+                      <small class="font-medium mt-2 text-[15px] tertiary-color"><i class="fa-solid fa-cart-shopping mr-2"></i>Delivery Fee : Free</small>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- ======= Card-02 ===== -->
+                <div class="flex lg:flex-row flex-col justify-between items-center gap-5 border border-[rgba(19, 19, 24, 0.60)] lg:p-6 p-5 rounded-2xl">
+                  <!-- == Img Part == -->
+                  <div class="lg:w-auto w-full">
+                    <img src="images/card-02.png"  class="w-full" alt="">
+                  </div>
+
+                  <!-- == Content part == -->
+                  <div>
+                    <ul class="flex gap-6 tertiary-color font-semibold">
+                      <li><i class="fa-solid fa-star mr-2 text-yellow-400"></i>5.0</li>
+                      <li><i class="fa-regular fa-eye mr-2"></i>20</li>
+                      <li><i class="fa-regular fa-heart mr-2"></i>200</li>
+                    </ul>
+
+                    <h3 class="text-xl font-extrabold primary-color my-1">World Cup Flags Football</h3>
+                    <p class=" text-[15px] tertiary-color font-medium leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                    <div class="flex lg:flex-row flex-col justify-between lg:items-center">
+                      <p class="font-extrabold text-xl secondary-color mt-2">Price - $22.00</p>
+                      <small class="font-medium mt-2 text-[15px] tertiary-color"><i class="fa-solid fa-cart-shopping mr-2"></i>Delivery Fee : Free</small>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- ======= Card-03 ===== -->
+                <div class="flex lg:flex-row flex-col justify-between items-center gap-5 border border-[rgba(19, 19, 24, 0.60)] lg:p-6 p-5 rounded-2xl">
+                  <!-- == Img Part == -->
+                  <div class="lg:w-auto w-full">
+                    <img src="images/card-03.png"  class="w-full" alt="">
+                  </div>
+
+                  <!-- == Content part == -->
+                  <div>
+                    <ul class="flex gap-6 tertiary-color font-semibold">
+                      <li><i class="fa-solid fa-star mr-2 text-yellow-400"></i>5.0</li>
+                      <li><i class="fa-regular fa-eye mr-2"></i>20</li>
+                      <li><i class="fa-regular fa-heart mr-2"></i>200</li>
+                    </ul>
+
+                    <h3 class="text-xl font-extrabold primary-color my-1">World Cup Flags Football</h3>
+                    <p class=" text-[15px] tertiary-color font-medium leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                    <div class="flex lg:flex-row flex-col justify-between lg:items-center">
+                      <p class="font-extrabold text-xl secondary-color mt-2">Price - $22.00</p>
+                      <small class="font-medium mt-2 text-[15px] tertiary-color"><i class="fa-solid fa-cart-shopping mr-2"></i>Delivery Fee : Free</small>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- ======= Card-04 ===== -->
+                <div class="flex lg:flex-row flex-col justify-between items-center gap-5 border border-[rgba(19, 19, 24, 0.60)] lg:p-6 p-5 rounded-2xl">
+                  <!-- == Img Part == -->
+                  <div class="lg:w-auto w-full">
+                    <img src="images/card-04.png"  class="w-full" alt="">
+                  </div>
+
+                  <!-- == Content part == -->
+                  <div>
+                    <ul class="flex gap-6 tertiary-color font-semibold">
+                      <li><i class="fa-solid fa-star mr-2 text-yellow-400"></i>5.0</li>
+                      <li><i class="fa-regular fa-eye mr-2"></i>20</li>
+                      <li><i class="fa-regular fa-heart mr-2"></i>200</li>
+                    </ul>
+
+                    <h3 class="text-xl font-extrabold primary-color my-1">World Cup Flags Football</h3>
+                    <p class=" text-[15px] tertiary-color font-medium leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                    <div class="flex lg:flex-row flex-col justify-between lg:items-center">
+                      <p class="font-extrabold text-xl secondary-color mt-2">Price - $22.00</p>
+                      <small class="font-medium mt-2 text-[15px] tertiary-color"><i class="fa-solid fa-cart-shopping mr-2"></i>Delivery Fee : Free</small>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- ======= Card-05 ===== -->
+                <div class="flex lg:flex-row flex-col justify-between items-center gap-5 border border-[rgba(19, 19, 24, 0.60)] lg:p-6 p-5 rounded-2xl">
+                  <!-- == Img Part == -->
+                  <div class="lg:w-auto w-full">
+                    <img src="images/card-05.png"  class="w-full" alt="">
+                  </div>
+
+                  <!-- == Content part == -->
+                  <div>
+                    <ul class="flex gap-6 tertiary-color font-semibold">
+                      <li><i class="fa-solid fa-star mr-2 text-yellow-400"></i>5.0</li>
+                      <li><i class="fa-regular fa-eye mr-2"></i>20</li>
+                      <li><i class="fa-regular fa-heart mr-2"></i>200</li>
+                    </ul>
+
+                    <h3 class="text-xl font-extrabold primary-color my-1">World Cup Flags Football</h3>
+                    <p class=" text-[15px] tertiary-color font-medium leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                    <div class="flex lg:flex-row flex-col justify-between lg:items-center">
+                      <p class="font-extrabold text-xl secondary-color mt-2">Price - $22.00</p>
+                      <small class="font-medium mt-2 text-[15px] tertiary-color"><i class="fa-solid fa-cart-shopping mr-2"></i>Delivery Fee : Free</small>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- ======= Card-06 ===== -->
+                <div class="flex lg:flex-row flex-col justify-between items-center gap-5 border border-[rgba(19, 19, 24, 0.60)] lg:p-6 p-5 rounded-2xl">
+                  <!-- == Img Part == -->
+                  <div class="lg:w-auto w-full">
+                    <img src="images/card-06.png"  class="w-full" alt="">
+                  </div>
+
+                  <!-- == Content part == -->
+                  <div>
+                    <ul class="flex gap-6 tertiary-color font-semibold">
+                      <li><i class="fa-solid fa-star mr-2 text-yellow-400"></i>5.0</li>
+                      <li><i class="fa-regular fa-eye mr-2"></i>20</li>
+                      <li><i class="fa-regular fa-heart mr-2"></i>200</li>
+                    </ul>
+
+                    <h3 class="text-xl font-extrabold primary-color my-1">World Cup Flags Football</h3>
+                    <p class=" text-[15px] tertiary-color font-medium leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+                    <div class="flex lg:flex-row flex-col justify-between lg:items-center">
+                      <p class="font-extrabold text-xl secondary-color mt-2">Price - $22.00</p>
+                      <small class="font-medium mt-2 text-[15px] tertiary-color"><i class="fa-solid fa-cart-shopping mr-2"></i>Delivery Fee : Free</small>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+          <!-- =============== Product Section End ============== -->
+
+        
+          <!-- ============= Clients Question Section Start ============ -->
+          <section id="question-section">
+            <div class="container lg:px-24 lg:py-12 px-4 py-14 mx-auto">
+              <!-- == Section Title == -->
+              <div class="text-center py-10 section-border">
+                <h2 class="primary-color lg:text-[40px] text-3xl font-extrabold">Clients Question</h2>
+                <p class="lg:px-60 pt-2 tertiary-color text-base leading-8 font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+              </div>
+
+              <div class="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mt-16 mt-14 lg:mb-5 border border-[rgba(19, 19, 24, 0.60)] lg:p-6 p-5 rounded-2xl items-center">
+                  <!-- ===== Question Image Part ====== -->
+                  <div class="lg:w-auto w-full lg:col-span-2">
+                    <img src="images/question.png" class="w-full" alt="">
+                  </div>
+
+                  <!-- ====== Question Accorion Part ====== -->
+                  <div class="lg:col-span-3">
+                    <!-- == Accordion-01 == -->
+                    <div class="collapse collapse-plus question-border-bottom">
+                      <input type="radio" name="my-accordion-3" checked="checked"/> 
+                      <div class="collapse-title text-[1.8rem] font-extrabold primary-color my-1">
+                        <span class="text-xl">Our Equipment</span>
+                      </div>
+                      <div class="collapse-content"> 
+                        <p class=" text-[15px] tertiary-color font-medium leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                      </div>
+                    </div>
+
+                    <!-- == Accordion-02 == -->
+                    <div class="collapse collapse-plus question-border-bottom">
+                      <input type="radio" name="my-accordion-3" checked="checked"/> 
+                      <div class="collapse-title text-[1.8rem] font-extrabold primary-color my-1">
+                        <span class="text-xl">Our Equipment</span>
+                      </div>
+                      <div class="collapse-content"> 
+                        <p class=" text-[15px] tertiary-color font-medium leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                      </div>
+                    </div>
+                    
+                    <!-- == Accordion-03 == -->
+                    <div class="collapse collapse-plus question-border-bottom">
+                      <input type="radio" name="my-accordion-3" checked="checked"/> 
+                      <div class="collapse-title text-[1.8rem] font-extrabold primary-color my-1">
+                        <span class="text-xl">Our Equipment</span>
+                      </div>
+                      <div class="collapse-content"> 
+                        <p class=" text-[15px] tertiary-color font-medium leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                      </div>
+                    </div>
+                    
+                    <!-- == Accordion-04 == -->
+                    <div class="collapse collapse-plus question-border-bottom">
+                      <input type="radio" name="my-accordion-3" checked="checked"/> 
+                      <div class="collapse-title text-[1.8rem] font-extrabold primary-color my-1">
+                        <span class="text-xl">Our Equipment</span>
+                      </div>
+                      <div class="collapse-content"> 
+                        <p class=" text-[15px] tertiary-color font-medium leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                      </div>
+                    </div>
+                    
+                    <!-- == Accordion-05 == -->
+                    <div class="collapse collapse-plus">
+                      <input type="radio" name="my-accordion-3" checked="checked"/> 
+                      <div class="collapse-title text-[1.8rem] font-extrabold primary-color my-1">
+                        <span class="text-xl">Our Equipment</span>
+                      </div>
+                      <div class="collapse-content"> 
+                        <p class="text-[15px] tertiary-color font-medium leading-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+            </div>
+          </section>
+          <!-- ================= Clients Question Section End =============== -->
+
+
+          <!-- ================== Contact Form Section Start =================== -->
+          <section id="contact-form-section">
+            <div class="container lg:px-24 lg:py-12 px-4 py-14 mx-auto">
+              <!-- == Section Title == -->
+              <div class="text-center py-10 section-border">
+                <h2 class="primary-color lg:text-[40px] text-3xl font-extrabold">Clients Question</h2>
+                <p class="lg:px-60 pt-2 tertiary-color text-base leading-8 font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+              </div>
+
+              <div class="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mt-16 mt-14 lg:mb-5 items-center">
+
+                <!-- ===== Contact Part-01 ===== -->
+                <div class="lg:col-span-2 border border-[rgba(19, 19, 24, 0.60)] lg:p-6 p-5 rounded-2xl">
+                  <!-- == Phone == -->
+                  <div class="bg-[#bced6d1a] w-full h-52 rounded-2xl mb-5 p-8">
+                    <img src="images/phone-icon.png" alt="">
+                    <h3 class="text-[15px] tertiary-color font-medium mt-8 mb-1">Phone Number :</h3>
+                    <h4 class=" text-lg font-extrabold primary-color">(+62) 123-321-543</h4>
+                  </div>
+
+                  <!-- == Email == -->
+                  <div class="bg-[#fddd5f1a] w-full h-52 rounded-2xl mb-5 p-8">
+                    <img src="images/email-icon.png" alt="">
+                    <h3 class="text-[15px] tertiary-color font-medium mt-8 mb-1">Email :</h3>
+                    <h4 class=" text-lg font-extrabold primary-color">hockeys@support.com</h4>
+                  </div>
+
+                  <!-- == Location ==-->
+                  <div class="bg-[#629cf31a] w-full h-52 rounded-2xl p-8">
+                    <img src="images/location-icon.png" alt="">
+                    <h3 class="text-[15px] tertiary-color font-medium mt-8 mb-1">Location :</h3>
+                    <h4 class=" text-lg font-extrabold primary-color">152/1 Mohakhali Wireless Gate</h4>
+                  </div>
+                </div>
+
+
+                <!-- ======== Contact Part-02 ======== -->
+                <div class="lg:col-span-3">
+                  <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-2">
+                    <div>
+                      <label type="text" class="text-lg font-extrabold primary-color pb-2">Your Name</label>
+                      <input type="text" class="mt-2 input bg-input w-full text-[15px]" placeholder="Enter your full name">
+                    </div>
+
+                    <div>
+                      <label type="text" class="text-lg font-extrabold primary-color pb-2">Your Email</label>
+                      <input type="email" class="mt-2 input bg-input w-full text-[15px]" placeholder="Enter your email">
+                    </div>
+
+                    
+                    <div>
+                      <label type="text" class="text-lg font-extrabold primary-color pb-2">Subject</label>
+                      <input type="text" class="mt-2 input bg-input w-full text-[15px]" placeholder="Enter your subject">
+                    </div>
+
+                    
+                    <div>
+                      <label type="text" class="text-lg font-extrabold primary-color pb-2">Phone Number</label>
+                      <input type="text" class="mt-2 input bg-input w-full text-[15px]" placeholder="Enter your phone number">
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <label type="text" class="text-lg font-extrabold primary-color pb-2">Message</label>
+                    <textarea class="textarea bg-input w-full lg:h-[400px] h-[200px] text-[15px] mt-2" placeholder="Write your message"></textarea>
+                  </div>
+
+                  <div class="mt-4">
+                    <button class="px-5 py-3 bg-[#FF4240] text-white font-semibold rounded-lg mb-5 w-full text-center">Send Message</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ======= Social Icon ===== -->
+              <div class="bg-input w-full text-center primary-color py-12 rounded-2xl">
+                <h5  class="text-2xl font-extrabold primary-color pb-5">Social Media</h5>
+                <div>
+                  <ul class="inline-flex gap-8 text-xl">
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>  
+          </section>
+          <!-- ==================== Contact Form Section End ============== -->
+          
+
+      </main>
+
+
+
+      <footer class="bg-[#131318]">
+        <div class="container lg:px-24 lg:py-20 px-4 py-14 mx-auto mt-12">
+          <div class="grid lg:grid-cols-5 grid-cols-1 gap-6 lg:text-left text-center">
+
+            <div class="lg:col-span-2 lg:mb-0 mb-9">
+              <h3 class="font-extrabold text-xl mb-5 text-white">Get In Touch</h3>
+              <p class="text-[#ffffff99] text-[15px] font-medium leading-8 lg:pr-20">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+
+              <h4 class="text-[#ffffff99] text-[15px] font-medium mt-6">
+                <i class="fa-regular fa-envelope text-red-600 pr-3 text-lg"></i>hockeys@support.com
+              </h4>
+              <h5 class="text-[#ffffff99] text-[15px] font-medium mt-3">
+                <i class="fa-solid fa-phone text-red-600 pr-3 text-lg"></i>(+62) 123-321-543
+              </h5>
+            </div>
+
+            <div class="lg:col-span-2 lg:mb-0 mb-9">
+              <div class="grid grid-cols-2 gap-6">
+                <div>
+                  <h3 class="font-extrabold text-xl mb-5 text-white">Get In Touch</h3>
+                  <ul class="text-[#ffffff99] text-[15px] leading-9 font-medium">
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Leadership</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">News & Article</a></li>
+                    <li><a href="">Legal Notice</a></li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 class="font-extrabold text-xl mb-5 text-white">Get In Touch</h3>
+                  <ul class="text-[#ffffff99] text-[15px] leading-9 font-medium">
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Ticket Support</a></li>
+                    <li><a href="">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-1 lg:mb-0">
+              <h3 class="font-extrabold text-xl mb-5 text-white">Get In Touch</h3>
+              <ul class="text-[#ffffff99] text-[15px] leading-9 font-medium">
+                <li><a href="">Academy</a></li>
+                <li><a href="">Group Lesson</a></li>
+                <li><a href="">Private Lesson</a></li>
+                <li><a href="">Hockeys for kids</a></li>
+                <li><a href="">Hockeys for Adult</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+</html>

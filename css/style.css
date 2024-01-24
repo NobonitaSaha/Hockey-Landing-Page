@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+.font-manrope{
+    font-family: 'Manrope', sans-serif;
+}
+
+.primary-color{
+    color: #131318;
+}
+
+.secondary-color{
+    color: #FF4240;
+}
+
+.tertiary-color{
+    color: rgba(19, 19, 24, 0.60)
+}
+
+.progress-ring__circle {
+  stroke-dasharray: 500, 500;
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(30deg);
+  transform-origin: 50% 50%;
+}
+
+.section-border{
+    border-top: 2px dashed rgba(19, 19, 24, 0.20);
+    border-bottom: 2px dashed rgba(19, 19, 24, 0.20);
+}
+
+.question-border-bottom {
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+    border-radius: 0;
+}
+
+.bg-input{
+    background: rgba(19, 19, 24, 0.03);
+}
+
